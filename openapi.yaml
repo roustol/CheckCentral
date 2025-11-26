@@ -1,0 +1,34 @@
+
+openapi: 3.0.1
+info:
+  title: CheckCentral Backup API
+  description: API για ερωτήσεις σχετικά με την κατάσταση των backup από το CheckCentral.
+  version: 1.0.0
+servers:
+  - url: https://uncombined-biotechnological-genny.ngrok-free.dev
+paths:
+  /ask:
+    post:
+      summary: Κάνε ερώτηση για backup
+      operationId: askBackupStatus
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question:
+                  type: string
+                  example: "Ποια backup έχουν πρόβλημα;"
+      responses:
+        '200':
+          description: Επιτυχής απάντηση
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  answer:
+                    type: string
+                    example: "Βρέθηκαν 3 προβληματικά backup: ..."

@@ -1,0 +1,18 @@
+
+{
+  "schema_version": "v1",
+  "name_for_human": "CheckCentral Backup Status",
+  "name_for_model": "checkcentral_backup",
+  "description_for_human": "Ρώτησε για την κατάσταση των backup από το CheckCentral",
+  "description_for_model": "Απαντάει σε ερωτήσεις για προβληματικά backup, warnings και επιτυχίες από το CheckCentral API.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://uncombined-biotechnological-genny.ngrok-free.dev/openapi.yaml"
+  },
+  "logo_url": "https://your-logo-url.com/logo.png",
+  "contact_email": "support@itsolution.gr",
+  "legal_info_url": "https://itsolution.gr/legal"
+}
